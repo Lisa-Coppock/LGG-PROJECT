@@ -21,17 +21,17 @@ Edit with own input file paths. This script will generate ESM-2 embeddings for e
 
 The script can run on CPU or GPU. If CUDA is available, the model is moved to the GPU and converted to half precision to reduce memory use. This script uses the esm2_t36_3B_UR50D model, however can be changed depending on CPU/GPU memory.
 
-#### `cluster_embeddings.py`
+#### cluster_embeddings.py
 
 Edit with your own input file paths. This script uses the ESM-2 embeddings cerated previously, applies UMAP dimensionality reduction, and uses HDBSCAN to assign each protein to a cluster (or noise).
 
 
 
-#### `enrichment_analysis.py`
+#### enrichment_analysis.py
 
 This script compares protein clusters between strains classified as beneficial or non-beneficial for skin health. It uses two-sided Fisher’s exact tests, calculates fold changes, applies Benjamini–Hochberg FDR correction, and identifies clusters enriched in beneficial strains.
 
-#### Required files
+## Required files
 
 - `all_yes_no_proteins.faa` - output of Prokka
 - `strain_metadata.csv` — strain classifications with the columns:
