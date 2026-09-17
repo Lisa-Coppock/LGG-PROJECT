@@ -1,0 +1,7 @@
+
+# LGG-clustering
+
+Edit **esm2_embedding.py** with own input file paths, then run locally or submit to HPC. This script will compute ESM‑2 (esm2_t36_3B_UR50D) embeddings for each sequence and save **esm2_embeddings.npy** and **gene_ids.csv** in the specified output directory.
+This script can run on CPU or GPU. If a CUDA device is available, run on GPU and will be converted to half precision (model.half()), which reduces memory usage.
+
+Edit **cluster_embeddings.py** with your own input file paths, then run locally or submit to HPC. This script uses the ESM2 embeddings created previously, applies UMAP for dimension reduction, and clusters the embeddings using HDBSCAN to assign each protein to a cluster (or noise).
