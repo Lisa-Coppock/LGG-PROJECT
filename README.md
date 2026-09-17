@@ -5,3 +5,4 @@ Edit **esm2_embedding.py** with own input file paths, then run locally or submit
 This script can run on CPU or GPU. If a CUDA device is available, run on GPU and will be converted to half precision (model.half()), which reduces memory usage.
 
 Edit **cluster_embeddings.py** with your own input file paths, then run locally or submit to HPC. This script uses the ESM2 embeddings created previously, applies UMAP for dimension reduction, and clusters the embeddings using HDBSCAN to assign each protein to a cluster (or noise).
+
