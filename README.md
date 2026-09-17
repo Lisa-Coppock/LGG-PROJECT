@@ -5,16 +5,14 @@ This repository contains scripts for generating ESM-2 protein embeddings, cluste
 ## Workflow
 
 Run the scripts in this order:
+###### esm2_embedding.py
+#### cluster_embeddings.py
+`enrichment_analysis.py`
 
-```bash
-python esm2_embedding.py
-python cluster_embeddings.py
-python enrichment_analysis.py
-```
 
-### `esm2_embedding.py`
+### esm2_embedding.py
 
-Edit the input and output paths before running. This script generates ESM-2 (`esm2_t36_3B_UR50D`) embeddings for each protein sequence and saves:
+Edit the input and output paths before running. This script generates ESM-2 embeddings for each protein sequence and saves:
 
 - `esm2_embeddings.npy`
 - `gene_ids.csv`
